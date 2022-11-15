@@ -1,4 +1,4 @@
-BMS-13: Create system arhitecture diagram
+BMS-13: Create system architecture diagram
 
 BMS-14: Create database diagram
 
