@@ -1,6 +1,9 @@
 package com.sda.mark.bookmanagement;
 
+import com.sda.mark.bookmanagement.controller.AuthorController;
 import com.sda.mark.bookmanagement.menu.UserOption;
+import com.sda.mark.bookmanagement.repository.AuthorRepositoryImpl;
+import com.sda.mark.bookmanagement.service.AuthorServiceImpl;
 import com.sda.mark.bookmanagement.utils.SessionManager;
 
 import java.util.Scanner;
@@ -9,6 +12,7 @@ public class Main {
     public static void main(String[] args) {
 
         SessionManager.getSessionFactory();
+        AuthorController authorController = new AuthorController(new AuthorServiceImpl(new AuthorRepositoryImpl()));
         Scanner scanner = new Scanner(System.in);
 
         UserOption userOption;
@@ -25,7 +29,7 @@ public class Main {
 
             switch(userOption){
                 case CREATE_AUTHOR:
-                    System.out.println("Not implemented");
+                    authorController.createAuthor();
                     break;
                 case EXIT:
                     System.out.println("Goodbye!");
