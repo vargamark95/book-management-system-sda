@@ -2,6 +2,7 @@ package com.sda.mark.bookmanagement.menu;
 
 public enum UserOption {
     CREATE_AUTHOR(1, "Create author"),
+    SHOW_ALL_AUTHORS(2, "Show all authors"),
     EXIT(99, "Exit"),
     UNKNOWN(100, "Unknown option");
 

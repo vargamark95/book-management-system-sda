@@ -12,10 +12,9 @@ Done! BMS-18: Create user menu
 
 
 Done! BMS-1: As a user I should be able to add a new Author in the system by providing the author firstname and lastname.
-The system should validate the firstname and lastname to not be empty or blank. The system should generate a new unique
-identification number.
+The system should validate the first
 
-BMS-2: As a user I should be able to see all the authors. Existing authors should be listed on the screen. Each line
+Done! BMS-2: As a user I should be able to see all the authors. Existing authors should be listed on the screen. Each line
 should show the author ID, firstname and lastname.
 
 BMS-3: As a user I should be able to update an existing author by providing the id of the author and new values of the

@@ -30,4 +30,11 @@ public class AuthorController {
         }
 
     }
+
+    public void showAllAuthors(){
+        authorService.getAllAuthors().stream().forEach(author ->
+                System.out.println("Author with ID: " + author.getId() + " " + author.getFirstName() +
+                        " " + author.getLastName()
+        ));
+    }
 }
