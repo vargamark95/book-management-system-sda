@@ -34,6 +34,12 @@ public class Main {
                 case SHOW_ALL_AUTHORS:
                     authorController.showAllAuthors();
                     break;
+                case UPDATE_AUTHOR:
+                    authorController.updateAuthor();
+                    break;
+                case DELETE_AUTHOR:
+                    authorController.deleteAuthor();
+                    break;
                 case EXIT:
                     System.out.println("Goodbye!");
                     break;

@@ -3,6 +3,8 @@ package com.sda.mark.bookmanagement.menu;
 public enum UserOption {
     CREATE_AUTHOR(1, "Create author"),
     SHOW_ALL_AUTHORS(2, "Show all authors"),
+    UPDATE_AUTHOR(3, "Update an author"),
+    DELETE_AUTHOR(4, "Delete an author"),
     EXIT(99, "Exit"),
     UNKNOWN(100, "Unknown option");
 
