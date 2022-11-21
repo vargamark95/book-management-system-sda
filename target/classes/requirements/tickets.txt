@@ -38,7 +38,7 @@ In case author id doesn't exists in the system, the system will show an error me
 
 HOMEWORK! BMS-8: As a user I should be able to delete an exisitng book by providing the id of the book that should be deleted.
 
-BMS-9: As a user I should be able to add a new review on a book providing the book title, score and comment.
+Done! BMS-9: As a user I should be able to add a new review on a book providing the book title, score and comment.
 The system should validate the score to be between 1-5. The system should validate the comment not to be empty
 or blank. In case author id doesn't exists in the system, the system will show an error message.
 
