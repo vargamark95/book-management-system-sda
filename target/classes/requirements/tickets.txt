@@ -20,14 +20,14 @@ should show the author ID, firstname and lastname.
 Done! BMS-3: As a user I should be able to update an existing author by providing the id of the author and new values of the
 author first name and last name. The system should validate the first name and last name to not be empty or blank.
 
-BMS-4: As a user I should be able to delete an existing author by providing the id of the author that should be deleted.
+Done! BMS-4: As a user I should be able to delete an existing author by providing the id of the author that should be deleted.
 
-BMS-5: As a user I should be able to add a new Book in the system by providing the book title, description and author id.
+Done! BMS-5: As a user I should be able to add a new Book in the system by providing the book title, description and author id.
 The system should validate the booktitle and description to not be empty or blank. The system should generate a new unique
 identification number. In case author id doesn't exists in the system, the system will show an error message.
 
 
-BMS-6: As a user I should be able to see all the books. Existing books should be listed on the screen. Each line
+Done! BMS-6: As a user I should be able to see all the books. Existing books should be listed on the screen. Each line
 should show the book ID, booktitle, description, and author full name.
 
 HOMEWORK! BMS-7: As a user I should be able to update an existing book by providing the id of the book and new values of the
@@ -38,7 +38,7 @@ In case author id doesn't exists in the system, the system will show an error me
 
 HOMEWORK! BMS-8: As a user I should be able to delete an exisitng book by providing the id of the book that should be deleted.
 
-BMS-9: As a user I should be able to add a new review on a book providing the book id, score and comment.
+BMS-9: As a user I should be able to add a new review on a book providing the book title, score and comment.
 The system should validate the score to be between 1-5. The system should validate the comment not to be empty
 or blank. In case author id doesn't exists in the system, the system will show an error message.
 

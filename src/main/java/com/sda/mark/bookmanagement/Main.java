@@ -2,10 +2,13 @@ package com.sda.mark.bookmanagement;
 
 import com.sda.mark.bookmanagement.controller.AuthorController;
 import com.sda.mark.bookmanagement.controller.BookController;
+import com.sda.mark.bookmanagement.controller.ReviewController;
 import com.sda.mark.bookmanagement.menu.UserOption;
 import com.sda.mark.bookmanagement.repository.AuthorRepositoryImpl;
 import com.sda.mark.bookmanagement.repository.BookRepositoryImpl;
+import com.sda.mark.bookmanagement.repository.BookReviewRepositoryImpl;
 import com.sda.mark.bookmanagement.service.AuthorServiceImpl;
+import com.sda.mark.bookmanagement.service.BookReviewServiceImpl;
 import com.sda.mark.bookmanagement.service.BookServiceImpl;
 import com.sda.mark.bookmanagement.utils.SessionManager;
 
@@ -17,6 +20,7 @@ public class Main {
         SessionManager.getSessionFactory();
         AuthorController authorController = new AuthorController(new AuthorServiceImpl(new AuthorRepositoryImpl()));
         BookController bookController = new BookController(new BookServiceImpl(new BookRepositoryImpl(), new AuthorRepositoryImpl()));
+        ReviewController reviewController = new ReviewController(new BookReviewServiceImpl(new BookReviewRepositoryImpl(), new BookRepositoryImpl()));
         Scanner scanner = new Scanner(System.in);
 
         UserOption userOption;
@@ -49,6 +53,9 @@ public class Main {
                     break;
                 case SHOW_ALL_BOOKS:
                     bookController.showAllBooks();
+                    break;
+                case CREATE_REVIEW:
+                    reviewController.createBookReview();
                     break;
                 case EXIT:
                     System.out.println("Goodbye!");

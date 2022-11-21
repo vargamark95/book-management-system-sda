@@ -23,7 +23,7 @@ public class BookServiceImpl implements BookService {
     }
 
     @Override
-    public void createBook(String title, String description, int authorId) throws EntityNotFoundException {
+    public void createBook(String title, String description, int authorId) throws InvalidParameterException, EntityNotFoundException {
         if (title == null || title.isBlank() || title.length() < 3) {
             throw new InvalidParameterException("Provided value for booktitle " + title +
                     " is invalid!");
